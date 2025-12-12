@@ -1,0 +1,246 @@
+body {
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Example full navbar style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b3d91;
+  padding: 15px 30px;
+  color: white;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main {
+  background-color: white;
+  padding: 40px 50px;
+  margin: auto;
+  height: 210px;
+  width: 320px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.main h1 {
+  color: black;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #0b3d91;
+  outline: none;
+}
+
+button {
+  background-color: #0b3d91;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #092f6d;
+}
+
+.middle {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  font-size: 30px;
+}
+
+.course-holder {
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: nowrap;
+
+  gap: 1rem;
+  overflow-x: auto;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.course-card {
+  width: 400px;
+  font-size: 2rem;
+  height: 300px;
+
+  padding: 20px;
+
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Login page styles */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.login-form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.login-form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #0052cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #003d99;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.images {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reviews page styles */
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.review-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.review-card .rating {
+  font-weight: bold;
+  color: #ff9900;
+}
+
+
+.width {
+  width: 50%;
+}
+
+.centered {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
