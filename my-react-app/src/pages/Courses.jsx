@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { courses } from "../data";
 import CourseCard from "../components/CourseCard";
 
@@ -20,6 +20,10 @@ export default function Courses() {
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
                     {filteredCourses.map((course) => (
                         <CourseCard key={course.id} title={course.title} img={course.img} />
+                    ))}
+                    <Link to={`/review?id=${course.id}`} key={course.id} style={{ textDecoration: "none" }}>
+                        <CourseCard title={course.title} img={course.img} />
+                    </Link>
                     ))}
                 </div>
             ) : (
